@@ -31,20 +31,12 @@ Evaluation: accuracy, per-class F1, AUC, sensitivity and specificity on the held
 
 **Notebooks**
 
-Notebooks
-Notebook	Contents
 01_data_exploration.ipynb	
 02_baseline.ipynb
 03_logistic_regression_validation.ipynb	
 04_model_comparison_cv.ipynb
 
-/table
-Results (test set)
-Model	Accuracy	F1 (crash)	AUC	Sensitivity	Specificity
-Random baseline	0.704	0.177	0.498	0.180	0.816
-Logistic regression	0.600	0.337	0.592	0.579	0.604
-Random forest (max depth 10)	0.628	0.339	0.594	0.543	0.646
-MLP (1 × 64, α = 0.1)	0.563	0.342	0.596	0.647	0.545
+
 **Key Findings**
 All models roughly double the crash-class F1 of the random baseline (≈0.34 vs 0.18), but overall predictive power is modest (AUC ≈ 0.59). Crash risk is hard to predict from these features alone
 Accuracy is misleading here: the random baseline has the highest accuracy only because it mostly predicts "no crash". The trained models trade accuracy for catching ~55–65% of crashes
