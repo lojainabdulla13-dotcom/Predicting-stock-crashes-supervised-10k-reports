@@ -38,7 +38,9 @@ Evaluation: accuracy, per-class F1, AUC, sensitivity and specificity on the held
 
 
 **Key Findings**
+
 All models roughly double the crash-class F1 of the random baseline (≈0.34 vs 0.18), but overall predictive power is modest (AUC ≈ 0.59). Crash risk is hard to predict from these features alone
+
 Accuracy is misleading here: the random baseline has the highest accuracy only because it mostly predicts "no crash". The trained models trade accuracy for catching ~55–65% of crashes
 The three models perform very similarly, which suggests the limit comes from the information in the features rather than from model complexity
 Deeper random forests overfit badly: CV F1 falls from 0.357 at depth 10 to ~0.09 at depth 30
